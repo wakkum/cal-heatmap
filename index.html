@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>An AJLabs Production</title>
+    <meta name="title" content="Al Jazeera Interactive" >
+    <meta property="title" content="Al Jazeera Interactive"/>
+    <meta name="description" content="An AJLabs Production">
+    <meta property="description" content="An AJLabs Production"/>
+    <meta name="image" content="http://interactive.aljazeera.com/aje/2017/jazeera-interactive/outside.jpg">
+    <meta property="image" content="http://interactive.aljazeera.com/aje/2017/jazeera-interactive/outside.jpg"/>
+    <meta name="author" content="Al Jazeera"/>
+    <link rel="canonical" href="http://interactive.aljazeera.com/aje/2017/jazeera-interactive/index.html" />
+    <meta property="og:title" content="Al Jazeera Interactive"/>
+    <meta property="og:description" content="An AJLabs Production"/>
+    <meta property="og:type" content="article.other"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@AJEnglish"/>
+    <meta property="twitter:title" content="Al Jazeera Interactive"/>
+    <meta property="twitter:description" content="An AJLabs Production"/>
+    <meta property="twitter:image:src" content="http://interactive.aljazeera.com/aje/2017/jazeera-interactive/outside.jpg"/>
+    <meta property="og:image" content="http://interactive.aljazeera.com/aje/2017/jazeera-interactive/outside.jpg"/>
+    <link rel="apple-touch-icon" href="apple-touch-icon.jpg">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/batcave.min.css">
+    <link rel="stylesheet" href="css/rrssb.css">
+    <link rel="stylesheet" href="css/style.css">
+
+<!-- HEATMAP TEST -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="css/cal-heatmap.css" />
+<script type="text/javascript" src="js/cal-heatmap.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div class="container">
+  <div class="row">
+    <div class="col-sm-12" id="cal-heatmap"></div>
+
+</div>
+</div>
+</body>
+
+<script type="text/javascript">
+	var cal = new CalHeatMap();
+	cal.init({
+  start: new Date(2016, 0), // January, 1st 2016
+	range: 12,
+	domain: "month",
+  subDomainTextFormat: "%d",
+  cellSize: 20,
+  legend: [1, 2, 3, 4, 5],
+  data: "data/data.json",
+
+  });
+
+
+</script>
+</html>
